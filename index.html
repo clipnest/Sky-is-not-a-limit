@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky Tower Builder</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🏗️ Build Your Sky Tower!</h1>
+
+  <div id="game-container">
+    <div id="earth">
+      <div id="tower"></div>
+    </div>
+
+    <div id="controls">
+      <label>Height (km): <input type="range" id="height-slider" min="0" max="100000" value="1000"></label>
+      <button onclick="buildTower()">Build Tower</button>
+    </div>
+
+    <div id="output">
+      <p id="message">Build your tower and reach for the stars! 🌟</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
